@@ -80,23 +80,6 @@
                 <developerEmail>SwingGuy1024@yahoo.com</developerEmail>
                 <useSpringBoot3>true</useSpringBoot3>
                 <useJakartaEe>true</useJakartaEe>
-                <!--
-                It may be possible to use the x-field-extra-annotation tag in the .yaml file to
-                get spring to return useful error messages, but I'm skeptical that it would work
-                or be easy to use. It's documented on the same page as the rest of the configOptions,
-                and its use is illustrated at https://stackoverflow.com/questions/54537046/how-to-generate-swagger-codegen-java-models-as-jpa-entities
-                -->
-
-                <!--
-                There may be an awkward but reliable way to get error messages, as described in
-                one answer to this question:
-                https://stackoverflow.com/questions/33663801/how-do-i-customize-default-error-message-from-spring-valid-validation/33664636#33664636
-                -->
-
-                <!-- These do nothing detectable -->
-                <!-- <performBeanValidation>true</performBeanValidation> -->
-                <!-- <useBeanValidation>true</useBeanValidation> -->
-                <!-- <disallowAdditionalPropertiesIfNotPresent>false</disallowAdditionalPropertiesIfNotPresent> -->
 
                 <!-- We don't want these: -->
                 <!-- <openApiNullable>false</openApiNullable> &lt;!&ndash; (includes #import ...JsonNullable) &ndash;&gt; -->
