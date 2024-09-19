@@ -15,7 +15,7 @@ When I generate my source code using OpenAPI, it creates a `generated-code` fold
 
 I don't like this new behavior. I want the generated code to appear only in the target folder. This way, the `maven clean` operation will delete the previously generated code, and this will discourage lazy developers from disabling the code generation and editing the source code directly. I have worked on several projects where this had already happened by the time I joined, and it made the project harder to work with, and broke the auto documentation feature that's so useful.
 
-Also, it seems to me that the `mvn clean` operation should delete the previously generated code.
+Also, it seems to me that the `mvn clean` operation should delete the previously generated code. It used to do that, but it doesn't anymore.
 
 I can't figure out how to override this behavior in the configuration of the generator. I tried to fix this by changing the `<sourceDirectory>` tag at the opening of the `<build>` block, and by setting the `<sourceFolder>` tag in the `<configOptions>` block. Neither worked.
 
